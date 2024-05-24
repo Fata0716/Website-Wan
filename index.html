@@ -89,4 +89,97 @@
         </section>
     </div>
 </body>
+
+    <div class="content">
+    <h2>Gallery</h2>
+    <img src="image1.jpg" alt="Description of image 1" width="300">
+    <img src="image2.jpg" alt="Description of image 2" width="300">
+</div>
+<div class="content">
+    <h2>Video</h2>
+    <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+    <div class="content">
+    <h2>Data Table</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>30</td>
+            <td>New York</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>25</td>
+            <td>London</td>
+        </tr>
+    </table>
+</div>
+
+<div class="content">
+    <h2>Contact Form</h2>
+    <form action="/submit_form" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>Click the Button to Toggle Content</h2>
+        <button id="toggleButton">Show/Hide Content</button>
+        <div id="toggleContent" class="hidden">
+            <p>This is some toggleable content.</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function() {
+            var content = document.getElementById('toggleContent');
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+            } else {
+                content.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
 </html>
+
+    
+</html>
+
+
